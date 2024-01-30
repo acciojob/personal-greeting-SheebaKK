@@ -11,10 +11,10 @@ const App = () => {
   }
   return (
     <div>
-      <p>Enter your name:</p><br />
+      Enter your name:<br />
         <input type="text" onChange={handleChange} value={name}/>
         <br />
-        {name ? <p>Hello {name}!</p>:""}
+        {name ? <>Hello {name}!</>:""}
     </div>
   )
 }
